@@ -2,19 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { PageViewComponent } from './components/page-view/page-view.component';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
-import { AboutComponent } from './components/about/about.component';
+import { PageViewModule } from './components/page-view/page-view.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PageViewComponent,
-    ContactFormComponent,
-    AboutComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PageViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

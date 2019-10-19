@@ -1,1 +1,26 @@
-<p>contact-form works!</p>
+<form>
+  <div class="form-container">
+    <mat-form-field>
+      <input matInput placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Preferred Contact Method">
+        <mat-option>Phone</mat-option>
+        <mat-option>Email</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Email" required>
+      <mat-error>Required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Phone" required>
+      <mat-error>Required</mat-error>
+    </mat-form-field>
+
+    <button mat-flat-button color="warn">SUBMIT</button>
+  </div>
+</form>
