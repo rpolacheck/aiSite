@@ -1,10 +1,11 @@
 <mat-toolbar>
-  <button mat-icon-button>
-    <mat-icon svgIcon="logo"></mat-icon>
-  </button>
-  <button mat-button>ABOUT</button>
-  <button mat-button>SERVICES</button>
-  <button mat-button>CONTACT</button>
+  <a href="#top"><button mat-icon-button disableRipple="true">
+    <mat-icon id="top" svgIcon="logo"></mat-icon>
+  </button></a>
+  <a href="#about"><button mat-button disableRipple="true">ABOUT</button></a>
+  <a href="#services"><button mat-button disableRipple="true">SERVICES</button></a>
+  <a href="#contact"><button mat-button disableRipple="true">CONTACT</button></a>
 </mat-toolbar>
-<app-about></app-about>
-<app-contact-form></app-contact-form>
+<app-about id="about"></app-about>
+<app-services id="services"></app-services>
+<app-contact id="contact"></app-contact>

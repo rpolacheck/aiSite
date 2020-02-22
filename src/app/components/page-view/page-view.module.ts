@@ -10,19 +10,29 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 import { AboutComponent } from '../about/about.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
+import { ServicesComponent } from '../services/services.component';
+import { ContactComponent } from '../contact/contact.component';
 import { PageViewComponent } from './page-view.component';
 
 
 @NgModule({
-  declarations: [AboutComponent, ContactFormComponent, PageViewComponent],
+  declarations: [
+    AboutComponent,
+    ContactComponent,
+    ContactFormComponent,
+    PageViewComponent,
+    ServicesComponent
+  ],
   imports: [
     BrowserAnimationsModule,
     CommonModule,
     HttpClientModule,
+    GoogleMapsModule,
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,

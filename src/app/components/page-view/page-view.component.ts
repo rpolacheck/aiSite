@@ -14,7 +14,11 @@ export class PageViewComponent implements OnInit {
       'logo',
       this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/logo.svg')
     );
-   }
+    this.matIconRegistry.addSvgIcon(
+      'logo-name',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/logo-name.svg')
+    );
+  }
 
   ngOnInit() {
   }

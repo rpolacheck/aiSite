@@ -5,9 +5,7 @@ import { AppComponent } from './app.component';
 import { PageViewModule } from './components/page-view/page-view.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     PageViewModule

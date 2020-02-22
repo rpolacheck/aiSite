@@ -1,6 +1,9 @@
 .mat-toolbar {
   background-color: #404040;
   color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .mat-button {
@@ -8,4 +11,5 @@
   font-size: .9rem;
   font-weight: 300;
   margin-top: 4px;
+  color: #FFFFFF;
 }
