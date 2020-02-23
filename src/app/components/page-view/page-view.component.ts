@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   templateUrl: './page-view.component.html',
   styleUrls: ['./page-view.component.scss']
 })
-export class PageViewComponent implements OnInit {
+export class PageViewComponent {
 
   constructor( private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
     this.matIconRegistry.addSvgIcon(
@@ -15,12 +15,12 @@ export class PageViewComponent implements OnInit {
       this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/logo.svg')
     );
     this.matIconRegistry.addSvgIcon(
-      'logo-name',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/logo-name.svg')
+      'ai-logo',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../../assets/ai-logo.svg')
     );
   }
 
-  ngOnInit() {
+  scroll(section: string) {
+    document.getElementById(section).scrollIntoView({ behavior: 'smooth', block: 'end'});
   }
-
 }

@@ -1,9 +1,41 @@
-<h1>Contact</h1>
-
-<google-map
-  height="500px"
-  width="100%"
-  [zoom]="zoom"
-  [center]="center"
-  [options]="options">
-</google-map>
+<div class="map-container">
+	<mat-list>
+		<mat-list-item>
+			<h3>Contact Us</h3>
+		</mat-list-item>
+		<mat-list-item>
+			<p>524 W 5th Ave, Naperville, IL 60563</p>
+		</mat-list-item>
+		<mat-list-item>
+			<div class="contact-info">
+				(630) 332-0138
+			</div>
+		</mat-list-item>
+		<mat-list-item>
+			<div class="contact-info">
+				ai@gmail.com
+			</div>
+		</mat-list-item>
+		<mat-list-item class="social-media-list">
+			<mat-icon class="social-media" svgIcon="facebook"></mat-icon>
+			<mat-icon class="social-media" svgIcon="instagram"></mat-icon>
+			<mat-icon class="social-media" svgIcon="twitter"></mat-icon>
+			<mat-icon class="social-media" svgIcon="youtube"></mat-icon>
+		</mat-list-item>
+	</mat-list>
+	<google-map
+		height="400px"
+		width="750px"
+		[center]="center"
+		[zoom]="zoom">
+		<map-marker
+			#marker
+			*ngFor="let marker of markers"
+			[position]="marker.position"
+			[label]="marker.label"
+	    [title]="marker.title"
+	    [options]="marker.options">
+		</map-marker>
+		<map-info-window>Info Window content</map-info-window>
+	</google-map>
+</div>

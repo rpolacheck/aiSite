@@ -1,11 +1,22 @@
 <mat-toolbar>
-  <a href="#top"><button mat-icon-button disableRipple="true">
-    <mat-icon id="top" svgIcon="logo"></mat-icon>
-  </button></a>
-  <a href="#about"><button mat-button disableRipple="true">ABOUT</button></a>
-  <a href="#services"><button mat-button disableRipple="true">SERVICES</button></a>
-  <a href="#contact"><button mat-button disableRipple="true">CONTACT</button></a>
+  <div>
+    <button mat-icon-button disableRipple="true" (click)="scroll('about')">
+      <mat-icon id="top" svgIcon="logo"></mat-icon>
+    </button>
+  </div>
+  <div>
+    <button mat-button (click)="scroll('services')" disableRipple="true">
+      SERVICES
+    </button>
+  </div>
+  <div>
+    <button mat-button (click)="scroll('contact')" disableRipple="true">
+      CONTACT
+    </button>
+  </div>
 </mat-toolbar>
-<app-about id="about"></app-about>
-<app-services id="services"></app-services>
-<app-contact id="contact"></app-contact>
+<div class="page-view-container">
+  <app-about id="about"></app-about>
+  <app-services id="services"></app-services>
+  <app-contact id="contact"></app-contact>
+</div>

@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { MatListModule } from '@angular/material/list';
 
 
 import { AboutComponent } from '../about/about.component';
@@ -34,6 +35,7 @@ import { PageViewComponent } from './page-view.component';
     HttpClientModule,
     GoogleMapsModule,
     MatButtonModule,
+    MatListModule,
     MatCardModule,
     MatFormFieldModule,
     MatIconModule,

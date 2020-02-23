@@ -1,0 +1,36 @@
+.map-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mat-list {
+  font-family: 'Open Sans', sans-serif;
+
+  .mat-list-item {
+    height: 2rem;
+  }
+  .social-media-list {
+    height: 48px;
+    margin-top: 1rem;
+  }
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-info {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.social-media {
+  margin-right: 12px;
+  height: 40px;
+  width: 40px;
+}
